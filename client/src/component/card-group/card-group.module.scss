@@ -1,0 +1,6 @@
+.card-group {
+    overflow-x: auto;
+    display: flex;
+    gap: var(--card-group-gap, var(--space-16));
+    padding: var(--card-group-padding, var(--space-4));
+}

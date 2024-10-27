@@ -1,0 +1,10 @@
+.icon {
+    width: 2.5rem;
+    fill: hsla(var(--color-white));
+}
+
+.icon--card {
+    position: absolute;
+    top: var(--space-16);
+    right: var(--space-16);
+}

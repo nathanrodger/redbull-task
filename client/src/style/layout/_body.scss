@@ -1,0 +1,9 @@
+body,
+main {
+    color: hsla(var(--color-white));
+    background-color: hsla(var(--color-primary));
+}
+
+main {
+    transform: translateZ(0);
+}

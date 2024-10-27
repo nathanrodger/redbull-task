@@ -1,0 +1,15 @@
+.root {
+    height: 150vh;
+    max-height: 100%;
+    overflow-x: hidden;
+    perspective: 1px;
+    perspective-origin: center top;
+    transform-style: preserve-3d;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container-max-width, 126rem);
+    margin: 0 auto;
+    padding: var(--container-padding, 6.4rem 1.6rem);
+}

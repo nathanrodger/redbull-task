@@ -1,0 +1,87 @@
+/*
+    Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*
+    Remove default margin.
+*/
+* {
+    margin: 0;
+}
+
+/*
+    1. Allow percentage-based heights in the application.
+    2. Prevent a white band at the bottom of pages when content is less than the viewport height.
+*/
+html, body {
+    height: 100%; /* 1 */
+    min-height: 100%; /* 2 */
+}
+
+/*
+    1. Never scroll the document horizontally.
+    2. Setup scaling rem values.
+    3. Prevent font size inflation.
+*/
+html {
+    overflow-x: hidden; /* 1 */
+    scroll-behavior: smooth;
+    font-size: 62.5%; /* 2 */
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none; /* 3 */
+}
+
+/*
+    Improve text rendering.
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    Remove list styles on ul, ol elements with a class, which suggests default styling will be removed.
+*/
+ul[class], ol[class] {
+    list-style: none;
+}
+
+/*
+    Set shorter line heights on headings and interactive elements
+*/
+h1, h2, h3, h4, button, input, label {
+    line-height: 1.1;
+}
+
+/*
+    Balance text wrapping on headings.
+*/
+h1, h2, h3, h4 {
+    text-wrap: balance;
+}
+
+/*
+    Improve media defaults.
+*/
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    Inherit fonts for inputs and buttons.
+*/
+input, button, textarea, select {
+    font: inherit;
+}
+
+/*
+    Prevent zoom when clicking button on mobile.
+*/
+button {
+    touch-action: manipulation;
+}

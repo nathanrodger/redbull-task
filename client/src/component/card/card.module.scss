@@ -1,0 +1,43 @@
+.card {
+    position: relative;
+    display: flex;
+    width: var(--card-width, 30rem);
+    min-width: var(--card-min-width, 30rem);
+    color: hsla(var(--color-white));
+}
+
+.card__content {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-16);
+    justify-content: space-between;
+    width: 100%;
+    padding: var(--space-16);
+}
+
+.card__title {
+    flex: 1 0 100%;
+    color: hsla(var(--color-white));
+}
+
+.card__icon {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+}
+
+.card__icon svg {
+    height: 4rem;
+    fill: hsla(var(--color-white));
+}
+
+.card__pill {
+    display: flex;
+    width: fit-content;
+    color: hsla(var(--color-white));
+    padding: 0.2rem 0.8rem;
+    background-color: hsla(var(--color-white) / 0.3);
+    border-radius: 0.4rem;
+}
